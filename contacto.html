@@ -3,75 +3,201 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Formulario de contacto de demostración de Demo Proyecto.">
-  <title>Contacto | Demo Proyecto</title>
-  <!-- Primero Bootstrap, después los estilos del proyecto. -->
+  <meta name="description" content="Fuentes, documentos, uso de la IA y contacto del proyecto de Hanin sobre Zara / Inditex.">
+  <title>Fuentes y contacto | Zara / Inditex, un proyecto de Hanin</title>
+  <!-- Primero Bootstrap, después las tipografías y los estilos del proyecto. -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
         crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body class="d-flex flex-column min-vh-100">
   <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
 
   <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
-  <nav class="navbar navbar-expand-md fixed-top site-nav" aria-label="Navegación principal">
+  <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Navegación principal">
     <div class="container">
-      <a class="navbar-brand brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"></span> Demo Proyecto
-      </a>
+      <a class="navbar-brand brand" href="index.html">Zara / Inditex</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
               aria-expanded="false" aria-label="Mostrar u ocultar la navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menuPrincipal">
-        <ul class="navbar-nav ms-auto gap-md-2">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="proceso.html">Proceso</a></li>
+          <li class="nav-item"><a class="nav-link" href="diagnostico.html">Diagnóstico y mejora</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Fuentes y contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <main id="contenido" tabindex="-1">
+    <header class="spread">
+      <div class="container">
+        <div class="row align-items-end g-4 g-lg-5">
+          <div class="col-lg-7">
+            <p class="kicker">Fuentes y contacto</p>
+            <h1 class="page-title">De dónde sale todo</h1>
+            <p class="intro mb-0">Los documentos completos del proyecto, cada fuente que he usado, cómo he trabajado con la inteligencia artificial y un formulario para escribirme.</p>
+          </div>
+          <div class="col-lg-5">
+            <figure class="spread-photo">
+              <img src="img/app-zara.jpg" alt="Móvil con la app de Zara escaneando una prenda">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-space pt-0" aria-labelledby="titulo-docs">
+      <div class="container">
+        <h2 id="titulo-docs" class="visually-hidden">Documentos del proyecto</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <a class="doc-link" href="docs/hanin_Inditex.pdf" target="_blank" rel="noopener">
+              <span class="kicker d-block">Entrega 1, en PDF</span>
+              <span class="display">Dossier de investigación</span>
+              <span class="d-block mt-2">Ficha de empresa, proceso, siete hitos, álbum y fuentes.</span>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a class="doc-link" href="docs/hanin_Inditex_Entrega2.pdf" target="_blank" rel="noopener">
+              <span class="kicker d-block">Entrega 2, en PDF</span>
+              <span class="display">Contenidos con IA</span>
+              <span class="d-block mt-2">Infografía, esquemas, mapa mental y registro de prompts.</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space band-stone" aria-labelledby="titulo-fuentes">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <h2 id="titulo-fuentes" class="section-title">Fuentes</h2>
+            <p>En toda la web, los códigos como [F1] enlazan a la fuente de cada dato. Las F son fuentes oficiales de
+              Inditex; las A, noticias de prensa económica que solo usé para algunas cifras. Las consulté todas en
+              noviembre de 2026.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="accordion service-accordion" id="acordeonFuentes">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#oficiales" aria-expanded="true" aria-controls="oficiales">
+                    Fuentes oficiales de Inditex (F1 a F17)
+                  </button>
+                </h3>
+                <div id="oficiales" class="accordion-collapse collapse show" data-bs-parent="#acordeonFuentes">
+                  <div class="accordion-body ps-0">
+                    <ul class="list-unstyled small mb-0 source-list">
+                    <li><strong>F1</strong> <a href="https://www.inditex.com/es/quienes-somos/nuestra-historia" target="_blank" rel="noopener">Inditex – Nuestra historia (web corporativa)</a></li>
+                    <li><strong>F2</strong> <a href="https://www.inditex.com/itxcomweb/tf/es/prensa/detalle-noticias/7f71fd36-94ec-45fa-a2e6-6837b63f2903/inditex-implanta-la-tecnologa-rfid-en-sus-tiendas" target="_blank" rel="noopener">Inditex – Nota de prensa «Inditex implanta la tecnología RFID en sus tiendas» (17/7/2014)</a></li>
+                    <li><strong>F3</strong> <a href="https://www.inditex.com/itxcomweb/by/es/prensa/detalle-noticias/72c82815-d764-48b2-a0cb-c1d2058d2bdd/las-ventas-de-inditex-aumentan-un-12-en-2016-hasta-23311-millones-de-euros" target="_blank" rel="noopener">Inditex – Resultados 2016: «Las ventas de Inditex aumentan un 12% en 2016»</a></li>
+                    <li><strong>F4</strong> <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/82292174-453e-48af-94ae-d7fee757a597/pablo-isla-anuncia-que-todas-las-marcas-de-inditex-estarn-disponibles-online-para-todo-el-mundo-en-2020" target="_blank" rel="noopener">Inditex – «Pablo Isla anuncia que todas las marcas estarán disponibles online para todo el mundo en 2020» (4/9/2018)</a></li>
+                    <li><strong>F5</strong> <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/e7b40240-7f4b-4141-b273-f5a37741172b/zara-lanza-su-tienda-global-por-internet-en-106-nuevos-mercados" target="_blank" rel="noopener">Inditex – «Zara lanza su tienda global por internet en 106 nuevos mercados» (2018)</a></li>
+                    <li><strong>F6</strong> <a href="https://www.inditex.com/itxcomweb/us/es/prensa/detalle-noticias/586b577b-077a-49f2-8fff-f6065aa34468/inditex-logra-superar-los-1100-millones-de-euros-de-beneficio" target="_blank" rel="noopener">Inditex – Resultados del ejercicio 2020: «Inditex logra superar los 1.100 millones de euros de beneficio»</a></li>
+                    <li><strong>F7</strong> <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/db9940f2-7ccb-4909-b3df-6d838bec2f4d/las-ventas-de-inditex-crecen-un-50-respecto-a-2020-y-en-mayo-superan-a-las-de-2019" target="_blank" rel="noopener">Inditex – Resultados 1T 2021: «Las ventas de Inditex crecen un 50% respecto a 2020»</a></li>
+                    <li><strong>F8</strong> <a href="https://www.inditex.com/itxcomweb/bq/es/prensa/detalle-noticias/464b3454-3676-469e-8106-2078e38e3435/resultados-consolidados-nueve-primeros-meses-2025" target="_blank" rel="noopener">Inditex – Resultados consolidados nueve primeros meses 2025</a></li>
+                    <li><strong>F9</strong> <a href="https://www.inditex.com/itxcomweb/api/media/1da2c9d1-dbca-49fb-9563-982a8a27fae6/INDITEXFullYear2025.pdf" target="_blank" rel="noopener">Inditex – FY2025 Results (1 feb 2025 – 31 ene 2026), PDF oficial</a></li>
+                    <li><strong>F10</strong> <a href="https://www.inditex.com/es/un-modelo-sostenible/como-trabajamos/logistica" target="_blank" rel="noopener">Inditex – Logística (web corporativa)</a></li>
+                    <li><strong>F11</strong> <a href="https://static.inditex.com/annual_report_2023/es/Estrategia.pdf" target="_blank" rel="noopener">Inditex – Memoria Anual 2023, «Modelo de negocio y estrategia» (PDF)</a></li>
+                    <li><strong>F12</strong> <a href="https://static.inditex.com/annual_report_2023/es/Social.pdf" target="_blank" rel="noopener">Inditex – Memoria Anual 2023, capítulo «Social» (descripción de áreas profesionales)</a></li>
+                    <li><strong>F13</strong> <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/82af130d-3711-4a68-99ca-6e56113083e2/el-consejo-de-administracin-de-inditex-acuerda-el-nombramiento-de-marta-ortega-como-presidenta-y-de-scar-garca-maceiras-como-consejero-delegado" target="_blank" rel="noopener">Inditex – Nombramiento de Marta Ortega y nuevo Comité de Dirección (2021)</a></li>
+                    <li><strong>F14</strong> <a href="https://www.inditex.com/itxcomweb/us/es/prensa/detalle-noticias/55f79fe7-2529-45d1-827c-d25eec5471f1/notitxstandford" target="_blank" rel="noopener">Inditex – Zara reabre en Stratford (Londres) una flagship pionera en integración tienda-online (2018)</a></li>
+                    <li><strong>F15</strong> <a href="https://www.inditex.com/itxcomweb/us/es/prensa/detalle-noticias/329bbe11-50a3-4b1b-b3d4-b052dc3c4d4b/inditex-regresa-a-beneficios-y-genera-734-millones-de-caja-neta-en-el-segundo-trimestre" target="_blank" rel="noopener">Inditex – Resultados 2T 2020: plataforma IOP y sistema SINT</a></li>
+                    <li><strong>F16</strong> <a href="https://www.youtube.com/inditex" target="_blank" rel="noopener">Canal oficial de YouTube de Inditex</a></li>
+                    <li><strong>F17</strong> <a href="https://youtu.be/nKeW42cGls8" target="_blank" rel="noopener">Inditex People (canal oficial de YouTube de Inditex) – vídeo «Inditex · Historia»</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#apoyo" aria-expanded="false" aria-controls="apoyo">
+                    Fuentes de apoyo (A1 a A4)
+                  </button>
+                </h3>
+                <div id="apoyo" class="accordion-collapse collapse" data-bs-parent="#acordeonFuentes">
+                  <div class="accordion-body ps-0">
+                    <ul class="list-unstyled small mb-0 source-list">
+                    <li><strong>A1</strong> <a href="https://www.modaes.com/empresas/inditex-mantiene-su-nuevo-ritmo-crece-un-32-y-gana-un-6-mas-en-2025" target="_blank" rel="noopener">Modaes – Resultados Inditex 2025 (tiendas, aperturas)</a></li>
+                    <li><strong>A2</strong> <a href="https://fashionunited.es/noticias/empresas/inditex-cierra-2024-creciendo-a-un-solo-digito-y-alcanzando-nuevos-maximos-historicos-en-ventas-y-beneficios/2025031245311" target="_blank" rel="noopener">FashionUnited – Inditex cierra 2024 (ventas por regiones)</a></li>
+                    <li><strong>A3</strong> <a href="https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/inditex-beneficio-record-de-6220-millones-y-eleva-n-897733" target="_blank" rel="noopener">Estrategias de Inversión – Resultados 2025 (ventas online)</a></li>
+                    <li><strong>A4</strong> <a href="https://www.merca2.es/2026/03/16/zara-tiendas-inditex-lefties-2360177/" target="_blank" rel="noopener">Merca2 – Tiendas propias y franquiciadas de Inditex 2025</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#ia" aria-expanded="false" aria-controls="ia">
+                    Cómo he usado la inteligencia artificial
+                  </button>
+                </h3>
+                <div id="ia" class="accordion-collapse collapse" data-bs-parent="#acordeonFuentes">
+                  <div class="accordion-body ps-0">
+                    <p><strong>NotebookLM:</strong> le di mi dossier y tres páginas oficiales de Inditex, y le pedí la línea del
+                      tiempo, el esquema antes y después, los departamentos y países, y el mapa mental.</p>
+                    <p><strong>Claude:</strong> me ayudó a investigar, a diseñar la infografía y los esquemas, y a montar esta web a
+                      partir de la plantilla de clase.</p>
+                    <p class="mb-0"><strong>Revisión:</strong> comparé todo con mi dossier. Corregí el hito de 2007 y quité la palabra
+                      «únicamente» del esquema antes y después. Los prompts completos están en la Entrega 2.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="contact-section section-space" aria-labelledby="titulo-contacto">
       <div class="container">
-        <div class="row g-4 g-lg-5">
+        <div class="row g-5">
           <div class="col-lg-5">
-            <h1 id="titulo-contacto" class="page-title">Contacto</h1>
-            <p class="intro mb-0">Cuéntanos qué tienes en mente para tu próximo proyecto.</p>
+            <h2 id="titulo-contacto" class="section-title">Escríbeme</h2>
+            <p class="intro mb-0">¿Tienes alguna pregunta o comentario sobre el proyecto? Déjamelo aquí.</p>
           </div>
           <div class="col-lg-7">
             <div class="card contact-card">
-              <div class="card-body p-4 p-md-5">
-                <h2 class="h4 fw-bold mb-3">Escríbenos</h2>
+              <div class="card-body p-0">
                 <p id="aviso-demo" class="small mb-4">
-                  Formulario de prueba. El envío se simula en el navegador. Todos los campos son obligatorios.
+                  Formulario de prueba: el envío se simula en el navegador. Todos los campos son obligatorios.
                 </p>
 
                 <!-- El script habilita el formulario tras registrar el envío de prueba. -->
                 <form id="formularioContacto" method="post" aria-describedby="aviso-demo">
                   <fieldset disabled>
                     <legend class="visually-hidden">Datos del mensaje</legend>
-                    <div class="mb-3">
+                    <div class="mb-4">
                       <label class="form-label" for="nombre">Nombre</label>
                       <input class="form-control" type="text" id="nombre" name="nombre"
                              autocomplete="name" pattern=".*\S.*" required>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-4">
                       <label class="form-label" for="email">Correo electrónico</label>
                       <input class="form-control" type="email" id="email" name="email"
                              autocomplete="email" required>
                     </div>
                     <div class="mb-4">
                       <label class="form-label" for="mensaje">Mensaje</label>
-                      <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
                     </div>
                     <button class="btn btn-accent" type="submit">Enviar mensaje</button>
                   </fieldset>
-                  <p id="estadoFormulario" class="mb-0" role="status"></p>
+                  <p id="estadoFormulario" class="mt-3 mb-0" role="status"></p>
                 </form>
                 <noscript><p class="mt-3 mb-0">Activa JavaScript para probar el formulario.</p></noscript>
               </div>
@@ -82,18 +208,21 @@
     </section>
   </main>
 
-  <!-- Pie común a las tres páginas. -->
+  <!-- Pie común a todas las páginas. -->
   <footer class="site-footer mt-auto">
-    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
-      <span class="fw-semibold">Demo Proyecto</span>
-      <small>Sitio de demostración</small>
+    <div class="container">
+      <p class="footer-mark" aria-hidden="true">Zara / Inditex</p>
+      <div class="d-flex flex-wrap justify-content-between gap-2">
+        <span>Un proyecto de Hanin para Digitalización, primera evaluación</span>
+        <small>Fotografías de campaña de Zara (zara.com). Datos de fuentes oficiales de Inditex.</small>
+      </div>
     </div>
   </footer>
 
-  <!-- El bundle activa los componentes con atributos data-bs-*. -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
           crossorigin="anonymous"></script>
+  <script src="js/animaciones.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

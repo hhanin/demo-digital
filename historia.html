@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Los siete hitos de la evolución tecnológica de Zara / Inditex, de 1975 a 2025.">
+  <title>Historia | Zara / Inditex, un proyecto de Hanin</title>
+  <!-- Primero Bootstrap, después las tipografías y los estilos del proyecto. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+        crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
+  <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html">Zara / Inditex</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+              aria-expanded="false" aria-label="Mostrar u ocultar la navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="historia.html" aria-current="page">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="proceso.html">Proceso</a></li>
+          <li class="nav-item"><a class="nav-link" href="diagnostico.html">Diagnóstico y mejora</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Fuentes y contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido" tabindex="-1">
+    <header class="spread">
+      <div class="container">
+        <div class="row align-items-end g-4 g-lg-5">
+          <div class="col-lg-7">
+            <p class="kicker">Historia</p>
+            <h1 class="page-title">De una tienda al mundo</h1>
+            <p class="intro mb-0">Todo empezó en 1975 con una tienda en A Coruña. Estos son los siete momentos que, para mí, mejor explican cómo Zara ha llegado a tenerlo todo conectado.</p>
+          </div>
+          <div class="col-lg-5">
+            <figure class="spread-photo">
+              <img src="img/tienda-antigua.jpg" alt="Gente haciendo cola ante una de las primeras tiendas Zara, foto antigua en blanco y negro">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Línea del tiempo: cada punto abre su hito en el acordeón. -->
+    <section class="timeline-band" aria-label="Línea del tiempo">
+      <div class="container">
+        <ol class="timeline">
+          <li class="">
+            <button type="button" class="tl-dot" data-hito="#hito1" aria-label="Abrir el hito de 1975: Primera tienda Zara">
+              <span class="tl-year">1975</span>
+              <span class="tl-name">Primera tienda Zara</span>
+            </button>
+          </li>
+          <li class="">
+            <button type="button" class="tl-dot" data-hito="#hito2" aria-label="Abrir el hito de 2007: Primera tienda online del grupo">
+              <span class="tl-year">2007</span>
+              <span class="tl-name">Primera tienda online del grupo</span>
+            </button>
+          </li>
+          <li class="">
+            <button type="button" class="tl-dot" data-hito="#hito3" aria-label="Abrir el hito de 2010: Zara empieza a vender online">
+              <span class="tl-year">2010</span>
+              <span class="tl-name">Zara empieza a vender online</span>
+            </button>
+          </li>
+          <li class="tech">
+            <button type="button" class="tl-dot" data-hito="#hito4" aria-label="Abrir el hito de 2014: Llega el RFID">
+              <span class="tl-year">2014</span>
+              <span class="tl-name">Llega el RFID</span>
+            </button>
+          </li>
+          <li class="tech">
+            <button type="button" class="tl-dot" data-hito="#hito5" aria-label="Abrir el hito de 2017–2020: Stock integrado">
+              <span class="tl-year">2017–2020</span>
+              <span class="tl-name">Stock integrado</span>
+            </button>
+          </li>
+          <li class="tech">
+            <button type="button" class="tl-dot" data-hito="#hito6" aria-label="Abrir el hito de 2020–2021: Inditex Open Platform y app">
+              <span class="tl-year">2020–2021</span>
+              <span class="tl-name">Inditex Open Platform y app</span>
+            </button>
+          </li>
+          <li class="tech">
+            <button type="button" class="tl-dot" data-hito="#hito7" aria-label="Abrir el hito de 2024–2025: Pago sin caja">
+              <span class="tl-year">2024–2025</span>
+              <span class="tl-name">Pago sin caja</span>
+            </button>
+          </li>
+        </ol>
+        <p class="tl-help">Los puntos negros son cambios tecnológicos. Pulsa un año para leerlo.</p>
+      </div>
+    </section>
+
+    <section class="section-space" aria-labelledby="titulo-hitos">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <h2 id="titulo-hitos" class="section-title">Siete hitos</h2>
+            <p>Para mi pregunta, los más importantes son el RFID (2014), el stock integrado (2017–2020) y la plataforma
+              propia de Inditex (2020–2021), porque cambiaron la forma de controlar la ropa.</p>
+          </div>
+          <div class="col-lg-8">
+            <!-- Cada botón apunta al id único de su panel plegable. -->
+            <div class="accordion service-accordion" id="acordeonHitos">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#hito1" aria-expanded="true" aria-controls="hito1">
+                    <span class="year">1975</span> <span>Primera tienda Zara</span>
+                  </button>
+                </h3>
+                <div id="hito1" class="accordion-collapse collapse show" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p>Amancio Ortega abre la primera Zara en la calle Juan Flórez de A Coruña. Desde el principio, lo que se vende en la tienda llega a los diseñadores.</p>
+                    <p class="mb-1"><strong>Qué necesidad resolvía:</strong> Vender directamente al cliente y saber qué quiere.</p>
+                    <p class="mb-2"><strong>Qué resultado tuvo:</strong> Es el origen del modelo que conecta tienda y diseño.</p>
+                    <p class="src mb-0">Fuente: <a href="https://www.inditex.com/es/quienes-somos/nuestra-historia" target="_blank" rel="noopener" title="Inditex – Nuestra historia (web corporativa)">[F1]</a> <a href="https://static.inditex.com/annual_report_2023/es/Estrategia.pdf" target="_blank" rel="noopener" title="Inditex – Memoria Anual 2023, «Modelo de negocio y estrategia» (PDF)">[F11]</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#hito2" aria-expanded="false" aria-controls="hito2">
+                    <span class="year">2007</span> <span>Primera tienda online del grupo</span>
+                  </button>
+                </h3>
+                <div id="hito2" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p>Zara Home se convierte en la primera tienda online de Inditex. Ese año se abren centros de distribución en Meco (Madrid) y León.</p>
+                    <p class="mb-1"><strong>Qué necesidad resolvía:</strong> Empezar a vender por internet y tener más capacidad logística.</p>
+                    <p class="mb-2"><strong>Qué resultado tuvo:</strong> Primera experiencia del grupo en la venta online.</p>
+                    <p class="src mb-0">Fuente: <a href="https://www.inditex.com/es/quienes-somos/nuestra-historia" target="_blank" rel="noopener" title="Inditex – Nuestra historia (web corporativa)">[F1]</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#hito3" aria-expanded="false" aria-controls="hito3">
+                    <span class="year">2010</span> <span>Zara empieza a vender online</span>
+                  </button>
+                </h3>
+                <div id="hito3" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p>En septiembre, Zara lanza su tienda por internet.</p>
+                    <p class="mb-1"><strong>Qué necesidad resolvía:</strong> Llegar a los clientes que prefieren comprar desde casa.</p>
+                    <p class="mb-2"><strong>Qué resultado tuvo:</strong> A final de 2010 ya vendía online en 16 países europeos.</p>
+                    <p class="src mb-0">Fuente: <a href="https://www.inditex.com/es/quienes-somos/nuestra-historia" target="_blank" rel="noopener" title="Inditex – Nuestra historia (web corporativa)">[F1]</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#hito4" aria-expanded="false" aria-controls="hito4">
+                    <span class="year">2014</span> <span>Llega el RFID<span class="tag">Tecnología</span></span>
+                  </button>
+                </h3>
+                <div id="hito4" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p>Cada prenda lleva un chip dentro de la alarma que la identifica por radiofrecuencia. Una antena puede leer muchas prendas a la vez.</p>
+                    <p class="mb-1"><strong>Qué necesidad resolvía:</strong> Saber qué tallas y modelos hay que reponer sin contar a mano.</p>
+                    <p class="mb-2"><strong>Qué resultado tuvo:</strong> En 2014 ya estaba en más de 700 tiendas Zara, y en 2016 en todas.</p>
+                    <p class="src mb-0">Fuente: <a href="https://www.inditex.com/itxcomweb/tf/es/prensa/detalle-noticias/7f71fd36-94ec-45fa-a2e6-6837b63f2903/inditex-implanta-la-tecnologa-rfid-en-sus-tiendas" target="_blank" rel="noopener" title="Inditex – Nota de prensa «Inditex implanta la tecnología RFID en sus tiendas» (17/7/2014)">[F2]</a> <a href="https://www.inditex.com/itxcomweb/by/es/prensa/detalle-noticias/72c82815-d764-48b2-a0cb-c1d2058d2bdd/las-ventas-de-inditex-aumentan-un-12-en-2016-hasta-23311-millones-de-euros" target="_blank" rel="noopener" title="Inditex – Resultados 2016: «Las ventas de Inditex aumentan un 12% en 2016»">[F3]</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#hito5" aria-expanded="false" aria-controls="hito5">
+                    <span class="year">2017–2020</span> <span>Stock integrado<span class="tag">Tecnología</span></span>
+                  </button>
+                </h3>
+                <div id="hito5" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p>La tienda y la web comparten el mismo inventario (sistema SINT). Un pedido online puede salir del almacén o de cualquier tienda.</p>
+                    <p class="mb-1"><strong>Qué necesidad resolvía:</strong> No perder ventas por no tener una talla en un sitio concreto.</p>
+                    <p class="mb-2"><strong>Qué resultado tuvo:</strong> En 2020 el sistema ya funcionaba en 5.777 tiendas.</p>
+                    <p class="src mb-0">Fuente: <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/82292174-453e-48af-94ae-d7fee757a597/pablo-isla-anuncia-que-todas-las-marcas-de-inditex-estarn-disponibles-online-para-todo-el-mundo-en-2020" target="_blank" rel="noopener" title="Inditex – «Pablo Isla anuncia que todas las marcas estarán disponibles online para todo el mundo en 2020» (4/9/2018)">[F4]</a> <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/e7b40240-7f4b-4141-b273-f5a37741172b/zara-lanza-su-tienda-global-por-internet-en-106-nuevos-mercados" target="_blank" rel="noopener" title="Inditex – «Zara lanza su tienda global por internet en 106 nuevos mercados» (2018)">[F5]</a> <a href="https://www.inditex.com/itxcomweb/us/es/prensa/detalle-noticias/586b577b-077a-49f2-8fff-f6065aa34468/inditex-logra-superar-los-1100-millones-de-euros-de-beneficio" target="_blank" rel="noopener" title="Inditex – Resultados del ejercicio 2020: «Inditex logra superar los 1.100 millones de euros de beneficio»">[F6]</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#hito6" aria-expanded="false" aria-controls="hito6">
+                    <span class="year">2020–2021</span> <span>Inditex Open Platform y app<span class="tag">Tecnología</span></span>
+                  </button>
+                </h3>
+                <div id="hito6" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p>Inditex crea su propia plataforma tecnológica (IOP). La app permite ver el stock de una tienda, recoger el mismo día o encontrar una prenda.</p>
+                    <p class="mb-1"><strong>Qué necesidad resolvía:</strong> Unir en un mismo sistema la tienda, la web y los datos.</p>
+                    <p class="mb-2"><strong>Qué resultado tuvo:</strong> Según Inditex, todo el inventario está disponible para el cliente en tiempo real.</p>
+                    <p class="src mb-0">Fuente: <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/db9940f2-7ccb-4909-b3df-6d838bec2f4d/las-ventas-de-inditex-crecen-un-50-respecto-a-2020-y-en-mayo-superan-a-las-de-2019" target="_blank" rel="noopener" title="Inditex – Resultados 1T 2021: «Las ventas de Inditex crecen un 50% respecto a 2020»">[F7]</a> <a href="https://www.inditex.com/itxcomweb/us/es/prensa/detalle-noticias/329bbe11-50a3-4b1b-b3d4-b052dc3c4d4b/inditex-regresa-a-beneficios-y-genera-734-millones-de-caja-neta-en-el-segundo-trimestre" target="_blank" rel="noopener" title="Inditex – Resultados 2T 2020: plataforma IOP y sistema SINT">[F15]</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#hito7" aria-expanded="false" aria-controls="hito7">
+                    <span class="year">2024–2025</span> <span>Pago sin caja<span class="tag">Tecnología</span></span>
+                  </button>
+                </h3>
+                <div id="hito7" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p>Llegan alarmas más pequeñas (soft tags) unidas al RFID, y se puede pagar en cualquier punto de la tienda.</p>
+                    <p class="mb-1"><strong>Qué necesidad resolvía:</strong> Acabar con las colas y comprar más rápido.</p>
+                    <p class="mb-2"><strong>Qué resultado tuvo:</strong> En 2025 funciona en todas las tiendas Zara.</p>
+                    <p class="src mb-0">Fuente: <a href="https://www.inditex.com/itxcomweb/bq/es/prensa/detalle-noticias/464b3454-3676-469e-8106-2078e38e3435/resultados-consolidados-nueve-primeros-meses-2025" target="_blank" rel="noopener" title="Inditex – Resultados consolidados nueve primeros meses 2025">[F8]</a> <a href="https://www.inditex.com/itxcomweb/api/media/1da2c9d1-dbca-49fb-9563-982a8a27fae6/INDITEXFullYear2025.pdf" target="_blank" rel="noopener" title="Inditex – FY2025 Results (1 feb 2025 – 31 ene 2026), PDF oficial">[F9]</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space band-stone" aria-labelledby="titulo-album">
+      <div class="container">
+        <h2 id="titulo-album" class="section-title">Cómo han cambiado las tiendas</h2>
+        <h3 class="album-head">Ayer</h3>
+        <div class="album album-ayer">
+          <figure>
+            <img src="img/primera-tienda-entrada.jpg" alt="Entrada de una de las primeras tiendas Zara, con el nombre en letras rojas y escaparates iluminados a los lados" loading="lazy">
+            <figcaption><strong>Las primeras tiendas.</strong> Escaparates llenos de ropa y el nombre en grandes letras rojas. Para saber si quedaba tu talla, había que entrar y preguntar.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/anuncio-antiguo.jpg" alt="Anuncio antiguo de periódico con una etiqueta de ropa que dice Zara, tiendas de moda" loading="lazy">
+            <figcaption><strong>La publicidad de antes.</strong> Un anuncio en el periódico con forma de etiqueta: «Zara, tiendas de moda».</figcaption>
+          </figure>
+          <figure>
+            <img src="img/tienda-antigua.jpg" alt="Gente haciendo cola ante una tienda Zara en una foto antigua en blanco y negro" loading="lazy">
+            <figcaption><strong>Colas en la calle.</strong> Solo se podía comprar en persona, así que en rebajas la gente esperaba fuera.</figcaption>
+          </figure>
+        </div>
+        <h3 class="album-head">Hoy</h3>
+        <div class="album">
+          <figure>
+            <img src="img/escaparate-actual.jpg" alt="Escaparate actual de Zara con las letras del nombre gigantes y una persona pasando por delante" loading="lazy">
+            <figcaption><strong>El escaparate de hoy.</strong> El nombre ocupa todo el cristal. La tienda sigue siendo el centro, pero ahora está conectada con la web y la app.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/sede-arteixo.jpg" alt="Entrada de la sede de Inditex en Arteixo con el nombre de la empresa" loading="lazy">
+            <figcaption><strong>La sede de Arteixo.</strong> Desde aquí se controla todo, y aquí está su gran centro logístico.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/app-zara.jpg" alt="Mano sujetando un móvil con la app de Zara escaneando una prenda" loading="lazy">
+            <figcaption><strong>La tienda en el móvil.</strong> Con la pestaña «Stock», el cliente ve si hay su talla sin preguntar.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/tienda-actual.jpg" alt="Interior de una tienda Zara actual de varias plantas" loading="lazy">
+            <figcaption><strong>Por dentro.</strong> Tiendas grandes donde también se recogen y devuelven pedidos online.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" aria-labelledby="titulo-infografia">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <h2 id="titulo-infografia" class="section-title">La infografía</h2>
+            <p>La misma historia en una sola imagen. El texto lo generé con NotebookLM a partir de mis fuentes y lo
+              revisé con mi dossier: corregí el hito de 2007, que la IA había explicado de forma muy general.</p>
+            <p>Y si quieres la versión contada por la propia empresa, el canal oficial Inditex People tiene el vídeo
+              «Inditex · Historia». <a href="https://youtu.be/nKeW42cGls8" target="_blank" rel="noopener" title="Inditex People (canal oficial de YouTube de Inditex) – vídeo «Inditex · Historia»">[F17]</a></p>
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <a class="btn btn-accent" href="https://youtu.be/nKeW42cGls8" target="_blank" rel="noopener">Ver el vídeo</a>
+              <a class="btn btn-outline" href="docs/hanin_Inditex_Entrega2.pdf" target="_blank" rel="noopener">Abrir el PDF</a>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <figure class="mb-0">
+              <img src="img/infografia.jpg" width="1200" height="1697" loading="lazy"
+                   alt="Infografía en blanco y negro con la línea del tiempo de Zara desde 1975 hasta 2025 y sus siete hitos">
+              <figcaption>Contenido de NotebookLM a partir de mis fuentes, revisado por mí. Diseño hecho con Claude (IA).</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie común a todas las páginas. -->
+  <footer class="site-footer mt-auto">
+    <div class="container">
+      <p class="footer-mark" aria-hidden="true">Zara / Inditex</p>
+      <div class="d-flex flex-wrap justify-content-between gap-2">
+        <span>Un proyecto de Hanin para Digitalización, primera evaluación</span>
+        <small>Fotografías de campaña de Zara (zara.com). Datos de fuentes oficiales de Inditex.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+          crossorigin="anonymous"></script>
+  <script src="js/animaciones.js"></script>
+</body>
+</html>

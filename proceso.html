@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cómo se coordinan el inventario, la tienda física y la venta online en Zara, antes y después del RFID.">
+  <title>Proceso | Zara / Inditex, un proyecto de Hanin</title>
+  <!-- Primero Bootstrap, después las tipografías y los estilos del proyecto. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+        crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
+  <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html">Zara / Inditex</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+              aria-expanded="false" aria-label="Mostrar u ocultar la navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link active" href="proceso.html" aria-current="page">Proceso</a></li>
+          <li class="nav-item"><a class="nav-link" href="diagnostico.html">Diagnóstico y mejora</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Fuentes y contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido" tabindex="-1">
+    <header class="spread">
+      <div class="container">
+        <div class="row align-items-end g-4 g-lg-5">
+          <div class="col-lg-7">
+            <p class="kicker">Proceso</p>
+            <h1 class="page-title">Antes y después</h1>
+            <p class="intro mb-0">Mi pregunta es cómo se coordinan el inventario, la tienda física y la venta online. Para verlo claro, comparo cómo se hacían las cosas antes del RFID y cómo se hacen ahora.</p>
+          </div>
+          <div class="col-lg-5">
+            <figure class="spread-photo">
+              <img src="img/sede-arteixo.jpg" alt="Entrada de la sede de Inditex en Arteixo, con el letrero de la empresa" style="object-position: 0% 50%">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- El viaje de una prenda, en tres pasos. -->
+    <section class="section-space band-cobalt" aria-labelledby="titulo-flujo">
+      <div class="container">
+        <h2 id="titulo-flujo" class="section-title">Cómo viaja una prenda hoy</h2>
+        <ol class="flow mt-5">
+          <li>
+            <h3>Centro logístico</h3>
+            <p>Cada prenda recibe su chip RFID y sale hacia las tiendas o hacia los clientes.</p>
+          </li>
+          <li>
+            <h3>Stock único</h3>
+            <p>El sistema SINT y la plataforma IOP saben en tiempo real dónde está cada prenda.</p>
+          </li>
+          <li>
+            <h3>Tienda, web y app</h3>
+            <p>El cliente ve el stock, compra donde quiere y recoge o recibe su pedido.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-space" aria-labelledby="titulo-comparacion">
+      <div class="container">
+        <h2 id="titulo-comparacion" class="section-title">El inventario, en dos momentos</h2>
+        <div class="table-responsive">
+          <table class="table table-zara align-top">
+            <caption class="src">Fuentes: <a href="https://www.inditex.com/itxcomweb/tf/es/prensa/detalle-noticias/7f71fd36-94ec-45fa-a2e6-6837b63f2903/inditex-implanta-la-tecnologa-rfid-en-sus-tiendas" target="_blank" rel="noopener" title="Inditex – Nota de prensa «Inditex implanta la tecnología RFID en sus tiendas» (17/7/2014)">[F2]</a> <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/82292174-453e-48af-94ae-d7fee757a597/pablo-isla-anuncia-que-todas-las-marcas-de-inditex-estarn-disponibles-online-para-todo-el-mundo-en-2020" target="_blank" rel="noopener" title="Inditex – «Pablo Isla anuncia que todas las marcas estarán disponibles online para todo el mundo en 2020» (4/9/2018)">[F4]</a> <a href="https://www.inditex.com/itxcomweb/us/es/prensa/detalle-noticias/586b577b-077a-49f2-8fff-f6065aa34468/inditex-logra-superar-los-1100-millones-de-euros-de-beneficio" target="_blank" rel="noopener" title="Inditex – Resultados del ejercicio 2020: «Inditex logra superar los 1.100 millones de euros de beneficio»">[F6]</a> <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/db9940f2-7ccb-4909-b3df-6d838bec2f4d/las-ventas-de-inditex-crecen-un-50-respecto-a-2020-y-en-mayo-superan-a-las-de-2019" target="_blank" rel="noopener" title="Inditex – Resultados 1T 2021: «Las ventas de Inditex crecen un 50% respecto a 2020»">[F7]</a> <a href="https://www.inditex.com/itxcomweb/us/es/prensa/detalle-noticias/329bbe11-50a3-4b1b-b3d4-b052dc3c4d4b/inditex-regresa-a-beneficios-y-genera-734-millones-de-caja-neta-en-el-segundo-trimestre" target="_blank" rel="noopener" title="Inditex – Resultados 2T 2020: plataforma IOP y sistema SINT">[F15]</a>. Revisé el texto de la IA y quité la palabra «únicamente» del apartado de información, porque exageraba lo que dicen las fuentes.</caption>
+            <thead>
+              <tr>
+                <th scope="col" style="width:22%"><span class="visually-hidden">Aspecto</span></th>
+                <th scope="col">Antes, hasta 2014</th>
+                <th scope="col">Después, 2017–2025</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Qué tarea se hacía</th>
+                  <td>Las prendas se contaban a mano o pasando el código de barras una por una. La web tenía su propio almacén aparte.</td>
+                  <td class="after">Una antena lee todas las etiquetas de golpe. Un pedido online puede salir del almacén o de cualquier tienda.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Qué tecnología</th>
+                  <td>Código de barras y recuento manual.</td>
+                  <td class="after">Chip RFID en cada prenda, stock integrado (SINT), plataforma IOP y la app.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Qué información circula</th>
+                  <td>Las ventas del día. Lo que había en cada tienda solo lo sabía esa tienda.</td>
+                  <td class="after">Dónde está cada prenda en tiempo real: almacén, tienda, probador o zona de pedidos online.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Para los trabajadores</th>
+                  <td>Mucho tiempo contando ropa a mano y buscando tallas.</td>
+                  <td class="after">Saben al momento qué reponer y preparan pedidos online desde la tienda.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Para los clientes</th>
+                  <td>Si no encontraba su talla en la tienda, se iba sin ella.</td>
+                  <td class="after">Mira el stock en la app, compra online, recoge el mismo día y paga sin hacer cola.</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="quote mt-5 mb-0">Zara ha pasado de tener la tienda y la web separadas a un único inventario conectado en
+          tiempo real.</p>
+      </div>
+    </section>
+
+    <section class="section-space band-stone" aria-labelledby="titulo-departamentos">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <h2 id="titulo-departamentos" class="section-title">Quién hace qué</h2>
+            <p>Inditex no publica un organigrama completo. Juntando su memoria anual y sus notas de prensa he identificado
+              estas áreas. Las que llevan un punto azul son las que más participan en mi proceso. <a href="https://static.inditex.com/annual_report_2023/es/Estrategia.pdf" target="_blank" rel="noopener" title="Inditex – Memoria Anual 2023, «Modelo de negocio y estrategia» (PDF)">[F11]</a> <a href="https://static.inditex.com/annual_report_2023/es/Social.pdf" target="_blank" rel="noopener" title="Inditex – Memoria Anual 2023, capítulo «Social» (descripción de áreas profesionales)">[F12]</a> <a href="https://www.inditex.com/itxcomweb/es/es/prensa/detalle-noticias/82af130d-3711-4a68-99ca-6e56113083e2/el-consejo-de-administracin-de-inditex-acuerda-el-nombramiento-de-marta-ortega-como-presidenta-y-de-scar-garca-maceiras-como-consejero-delegado" target="_blank" rel="noopener" title="Inditex – Nombramiento de Marta Ortega y nuevo Comité de Dirección (2021)">[F13]</a></p>
+          </div>
+          <div class="col-lg-8">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4">
+          <div class="col">
+            <article class="card dept-card key h-100">
+              <div class="card-body px-0 pt-3">
+                <h3>Diseño y producto</h3>
+                <p>Crea las colecciones según lo que más se vende.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card dept-card h-100">
+              <div class="card-body px-0 pt-3">
+                <h3>Fabricación</h3>
+                <p>Fabrica o compra las prendas a proveedores.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card dept-card key h-100">
+              <div class="card-body px-0 pt-3">
+                <h3>Logística</h3>
+                <p>Diez centros en España. Pone el chip RFID y envía la ropa.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card dept-card key h-100">
+              <div class="card-body px-0 pt-3">
+                <h3>Tiendas</h3>
+                <p>Venden, reponen y preparan pedidos online.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card dept-card key h-100">
+              <div class="card-body px-0 pt-3">
+                <h3>Online</h3>
+                <p>Web, app y atención al cliente por internet.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card dept-card key h-100">
+              <div class="card-body px-0 pt-3">
+                <h3>Tecnología</h3>
+                <p>La plataforma IOP, el RFID, las apps y los datos.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card dept-card h-100">
+              <div class="card-body px-0 pt-3">
+                <h3>Sostenibilidad</h3>
+                <p>Impacto ambiental y social, como reutilizar el RFID.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card dept-card h-100">
+              <div class="card-body px-0 pt-3">
+                <h3>Personas</h3>
+                <p>Contrata y forma a los trabajadores.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card dept-card h-100">
+              <div class="card-body px-0 pt-3">
+                <h3>Finanzas y servicios</h3>
+                <p>Dinero, inversiones, legal y comunicación.</p>
+              </div>
+            </article>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" aria-labelledby="titulo-mercados">
+      <div class="container">
+        <h2 id="titulo-mercados" class="section-title">Dónde está</h2>
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <div class="row row-cols-2 g-4">
+              <div class="col"><p class="figure-big">5.460</p><p class="mb-0">tiendas en 2025</p></div>
+              <div class="col"><p class="figure-big">214</p><p class="mb-0">mercados con venta online</p></div>
+              <div class="col"><p class="figure-big">41</p><p class="mb-0">mercados con aperturas en 2025</p></div>
+              <div class="col"><p class="figure-big">86&nbsp;%</p><p class="mb-0">de las ventas, en tiendas propias</p></div>
+            </div>
+            <p class="src mt-4">Datos del grupo Inditex, ejercicio 2025 (de febrero de 2025 a enero de 2026). Hay unas 1.150 franquicias. <a href="https://www.inditex.com/itxcomweb/api/media/1da2c9d1-dbca-49fb-9563-982a8a27fae6/INDITEXFullYear2025.pdf" target="_blank" rel="noopener" title="Inditex – FY2025 Results (1 feb 2025 – 31 ene 2026), PDF oficial">[F9]</a> <a href="https://www.modaes.com/empresas/inditex-mantiene-su-nuevo-ritmo-crece-un-32-y-gana-un-6-mas-en-2025" target="_blank" rel="noopener" title="[Apoyo, no oficial] Modaes – Resultados Inditex 2025 (tiendas, aperturas)">[A1]</a> <a href="https://www.merca2.es/2026/03/16/zara-tiendas-inditex-lefties-2360177/" target="_blank" rel="noopener" title="[Apoyo, no oficial] Merca2 – Tiendas propias y franquiciadas de Inditex 2025">[A4]</a></p>
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <h3 class="h5 mb-3">Ventas por regiones en 2024</h3>
+            <ul class="bars">
+              <li><span>Europa sin España</span><span class="bar"><span style="--v:50.6"></span></span><span class="bar-val">50,6 %</span></li>
+              <li><span>América</span><span class="bar"><span style="--v:18.6"></span></span><span class="bar-val">18,6 %</span></li>
+              <li><span>Asia y resto</span><span class="bar"><span style="--v:15.7"></span></span><span class="bar-val">15,7 %</span></li>
+              <li><span>España (aprox.)</span><span class="bar"><span style="--v:15.1"></span></span><span class="bar-val">15,1 %</span></li>
+            </ul>
+            <p class="src mb-4">El dato de España lo calculé restando del 100 %. <a href="https://fashionunited.es/noticias/empresas/inditex-cierra-2024-creciendo-a-un-solo-digito-y-alcanzando-nuevos-maximos-historicos-en-ventas-y-beneficios/2025031245311" target="_blank" rel="noopener" title="[Apoyo, no oficial] FashionUnited – Inditex cierra 2024 (ventas por regiones)">[A2]</a></p>
+            <p class="quote mb-0">El mercado que estudio: España, marca Zara, tiendas propias.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space band-stone" aria-labelledby="titulo-esquemas">
+      <div class="container">
+        <h2 id="titulo-esquemas" class="section-title">Los esquemas hechos con IA</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <figure class="mb-0">
+              <a href="img/antes-despues.jpg" target="_blank" rel="noopener"><img src="img/antes-despues.jpg" width="1600" height="1131" loading="lazy"
+                 alt="Esquema que compara el inventario de Zara antes y después del RFID en cinco apartados"></a>
+              <figcaption><strong>Antes y después.</strong> Pulsa para verlo en grande.</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="mb-0">
+              <a href="img/departamentos-paises.jpg" target="_blank" rel="noopener"><img src="img/departamentos-paises.jpg" width="1600" height="1131" loading="lazy"
+                 alt="Esquema con los nueve departamentos de Inditex y sus cifras de tiendas, mercados y ventas por regiones"></a>
+              <figcaption><strong>Departamentos y países.</strong> Pulsa para verlo en grande.</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="mb-0">
+              <a href="img/mapa-mental.jpg" target="_blank" rel="noopener"><img src="img/mapa-mental.jpg" width="1500" height="2142" loading="lazy"
+                 alt="Mapa mental generado con NotebookLM con dos ramas: departamentos y países y mercados"></a>
+              <figcaption><strong>Mapa mental de NotebookLM.</strong> Pulsa para verlo en grande.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="src mt-4 mb-0">El contenido lo generó NotebookLM a partir de mi dossier y de fuentes oficiales de Inditex, y lo revisé yo.
+          Los dos primeros esquemas los diseñé con Claude (IA).</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie común a todas las páginas. -->
+  <footer class="site-footer mt-auto">
+    <div class="container">
+      <p class="footer-mark" aria-hidden="true">Zara / Inditex</p>
+      <div class="d-flex flex-wrap justify-content-between gap-2">
+        <span>Un proyecto de Hanin para Digitalización, primera evaluación</span>
+        <small>Fotografías de campaña de Zara (zara.com). Datos de fuentes oficiales de Inditex.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+          crossorigin="anonymous"></script>
+  <script src="js/animaciones.js"></script>
+</body>
+</html>

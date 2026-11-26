@@ -3,108 +3,151 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Demo Proyecto, sitio de demostración sobre diseño y desarrollo web.">
-  <title>Inicio | Demo Proyecto</title>
-  <!-- Primero Bootstrap, después los estilos del proyecto. -->
+  <meta name="description" content="Proyecto de Hanin sobre la evolución digital de Zara / Inditex y una propuesta de mejora.">
+  <title>Inicio | Zara / Inditex, un proyecto de Hanin</title>
+  <!-- Primero Bootstrap, después las tipografías y los estilos del proyecto. -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
         crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body class="d-flex flex-column min-vh-100">
   <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
 
   <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
-  <nav class="navbar navbar-expand-md fixed-top site-nav" aria-label="Navegación principal">
+  <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Navegación principal">
     <div class="container">
-      <a class="navbar-brand brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"></span> Demo Proyecto
-      </a>
+      <a class="navbar-brand brand" href="index.html">Zara / Inditex</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
               aria-expanded="false" aria-label="Mostrar u ocultar la navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menuPrincipal">
-        <ul class="navbar-nav ms-auto gap-md-2">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="proceso.html">Proceso</a></li>
+          <li class="nav-item"><a class="nav-link" href="diagnostico.html">Diagnóstico y mejora</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Fuentes y contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <main id="contenido" tabindex="-1">
-    <!-- Hero con dos columnas a partir de pantallas grandes. -->
-    <section class="hero" aria-labelledby="titulo-inicio">
-      <div class="container">
-        <div class="row align-items-center g-4 g-lg-5">
-          <div class="col-lg-6">
-            <h1 id="titulo-inicio" class="hero-title">Diseñamos webs <span>fáciles de usar.</span></h1>
-            <p class="intro mt-4 mb-4">
-              Creamos sitios claros, accesibles y adaptados a cada pantalla.
-            </p>
-            <a class="btn btn-accent btn-lg" href="servicios.html">
-              Explorar servicios <span aria-hidden="true">→</span>
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <!-- Sustituye la imagen de ejemplo y actualiza su texto alternativo. -->
-            <div class="hero-media">
-              <img src="img/estudio-demo.jpg" width="1280" height="854" class="img-fluid"
-                   alt="Pasillo de un estudio con salas acristaladas">
-            </div>
+    <!-- Portada tipo revista: el título se invierte al pasar sobre la foto. -->
+    <section class="cover" aria-labelledby="titulo-inicio">
+      <figure class="cover-photo">
+        <img src="img/campana-chaqueta.jpg" width="850" height="1275"
+             alt="Modelo con gafas de sol y una chaqueta azul cobalto amplia, foto de campaña de Zara">
+      </figure>
+      <figure class="cover-inset">
+        <img src="img/campana-vaqueros.jpg" width="850" height="1275"
+             alt="Modelo con top rosa y vaqueros anchos en unas escaleras de piedra, foto de campaña de Zara">
+      </figure>
+      <span class="cover-credit">Fotos: campaña Zara</span>
+      <div class="container cover-content">
+        <p class="cover-issue">Proyecto Digitalización de Hanin. Primera evaluación, noviembre de 2026.</p>
+        <h1 id="titulo-inicio" class="cover-title">
+          <span class="line">De una tienda</span>
+          <span class="line">a un stock</span>
+          <span class="line">conectado</span>
+        </h1>
+        <div class="cover-foot">
+          <p>Cómo la tecnología cambió la forma de trabajar y vender de Zara, y qué mejora propongo para su futuro.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-accent" href="historia.html">Ver la historia</a>
+            <a class="btn btn-outline" href="diagnostico.html">Ver mi propuesta</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Una columna en móvil y tres a partir del breakpoint md. -->
-    <section class="section-space" aria-labelledby="titulo-areas">
+    <!-- Las dos preguntas del proyecto. -->
+    <section class="section-space" aria-labelledby="titulo-preguntas">
       <div class="container">
-        <h2 id="titulo-areas" class="section-title mb-4">Qué hacemos</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-4">
-          <div class="col">
-            <article class="card service-card h-100">
-              <div class="card-body p-4">
-                <h3 class="h5 fw-bold">Diseño de interfaces</h3>
-                <p class="mb-0">Damos forma a pantallas que ayudan a encontrar la información y completar tareas.</p>
-              </div>
-            </article>
+        <h2 id="titulo-preguntas" class="visually-hidden">Preguntas del proyecto</h2>
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <p class="kicker">La pregunta de toda la clase</p>
+            <p class="quote mb-0">¿Cómo ha cambiado la tecnología la forma de trabajar, vender y generar valor de esta empresa,
+              y qué mejora digital propondríamos para su futuro?</p>
           </div>
-          <div class="col">
-            <article class="card service-card h-100">
-              <div class="card-body p-4">
-                <h3 class="h5 fw-bold">Desarrollo web</h3>
-                <p class="mb-0">Convertimos el diseño en páginas que se adaptan a móviles, tablets y ordenadores.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col">
-            <article class="card service-card h-100">
-              <div class="card-body p-4">
-                <h3 class="h5 fw-bold">Accesibilidad</h3>
-                <p class="mb-0">Revisamos la legibilidad, los contrastes y la navegación con teclado.</p>
-              </div>
-            </article>
+          <div class="col-lg-4 offset-lg-1 align-self-end">
+            <p class="kicker">Mi pregunta sobre Zara</p>
+            <p class="intro mb-0">¿Cómo se coordinan el inventario, la tienda física y la venta online?</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Las cifras, contadas como una frase. -->
+    <section class="section-space band-stone" aria-labelledby="titulo-cifras">
+      <div class="container">
+        <h2 id="titulo-cifras" class="visually-hidden">Zara en cifras</h2>
+        <p class="statement">En 1975 abrió una tienda en A Coruña. Hoy el grupo tiene 5.460, vende en 214 mercados
+          y todas sus tiendas usan RFID.</p>
+        <p class="src mt-4 mb-0">Datos del grupo Inditex, ejercicio 2025. Fuentes: <a href="https://www.inditex.com/es/quienes-somos/nuestra-historia" target="_blank" rel="noopener" title="Inditex – Nuestra historia (web corporativa)">[F1]</a> <a href="https://www.inditex.com/itxcomweb/api/media/1da2c9d1-dbca-49fb-9563-982a8a27fae6/INDITEXFullYear2025.pdf" target="_blank" rel="noopener" title="Inditex – FY2025 Results (1 feb 2025 – 31 ene 2026), PDF oficial">[F9]</a> <a href="https://www.inditex.com/itxcomweb/us/es/prensa/detalle-noticias/586b577b-077a-49f2-8fff-f6065aa34468/inditex-logra-superar-los-1100-millones-de-euros-de-beneficio" target="_blank" rel="noopener" title="Inditex – Resultados del ejercicio 2020: «Inditex logra superar los 1.100 millones de euros de beneficio»">[F6]</a></p>
+      </div>
+    </section>
+
+    <!-- Índice de la web, como el sumario de una revista. -->
+    <section class="section-space" aria-labelledby="titulo-numero">
+      <div class="container">
+        <h2 id="titulo-numero" class="section-title">En este número</h2>
+        <ol class="issue-list">
+          <li>
+            <a href="historia.html">
+              <span class="issue-num">1</span>
+              <span><span class="issue-name">De una tienda al mundo</span><span class="issue-desc">Siete momentos, de la primera tienda de 1975 al pago sin caja.</span></span>
+              <img src="img/tienda-antigua.jpg" alt="" loading="lazy">
+            </a>
+          </li>
+          <li>
+            <a href="proceso.html">
+              <span class="issue-num">2</span>
+              <span><span class="issue-name">Antes y después</span><span class="issue-desc">Cómo pasó Zara de contar la ropa a mano a saberlo todo en tiempo real.</span></span>
+              <img src="img/app-zara.jpg" alt="" loading="lazy">
+            </a>
+          </li>
+          <li>
+            <a href="diagnostico.html">
+              <span class="issue-num">3</span>
+              <span><span class="issue-name">Ver la prenda de verdad</span><span class="issue-desc">Lo que Zara hace bien, lo que puede mejorar y mi propuesta.</span></span>
+              <img src="img/campana-vaqueros.jpg" alt="" loading="lazy">
+            </a>
+          </li>
+          <li>
+            <a href="contacto.html">
+              <span class="issue-num">4</span>
+              <span><span class="issue-name">Fuentes y contacto</span><span class="issue-desc">De dónde sale cada dato, los documentos y cómo usé la IA.</span></span>
+              <img src="img/sede-arteixo.jpg" alt="" loading="lazy">
+            </a>
+          </li>
+        </ol>
       </div>
     </section>
   </main>
 
-  <!-- Pie común a las tres páginas. -->
+  <!-- Pie común a todas las páginas. -->
   <footer class="site-footer mt-auto">
-    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
-      <span class="fw-semibold">Demo Proyecto</span>
-      <small>Sitio de demostración</small>
+    <div class="container">
+      <p class="footer-mark" aria-hidden="true">Zara / Inditex</p>
+      <div class="d-flex flex-wrap justify-content-between gap-2">
+        <span>Un proyecto de Hanin para Digitalización, primera evaluación</span>
+        <small>Fotografías de campaña de Zara (zara.com). Datos de fuentes oficiales de Inditex.</small>
+      </div>
     </div>
   </footer>
 
-  <!-- El bundle activa los componentes con atributos data-bs-*. -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
           crossorigin="anonymous"></script>
+  <script src="js/animaciones.js"></script>
 </body>
 </html>
